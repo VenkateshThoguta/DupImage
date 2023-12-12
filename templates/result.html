@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+
+    {% if result %}
+        <p>{{ result }}</p>
+        {% if image_path %}
+            <a href="{{ url_for('download', filename='encrypted_image.png') }}" download>Download Image</a>
+
+      {% endif %}
+    {% else %}
+        <p>Key mismatch! Decryption failed.</p>
+    {% endif %}
+    
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Encryption/Decryption</title>
+</head>
+<body>
+    <h1>Image Encryption/Decryption</h1>
+    
+    
+    <form action="/encrypt" method="post" enctype="multipart/form-data">
+        <label for="file">Choose an image:</label>
+        <input type="file" name="file" accept=".jpg, .jpeg, .png" required>
+        <label for="key">Enter encryption key:</label>
+        <input type="text" name="key" required>
+        <button type="submit">Encrypt</button>
+    </form>
+
+    <form action="/decrypt" method="post" enctype="multipart/form-data">
+        <label for="file">Choose an encrypted image:</label>
+        <input type="file" name="file" accept=".png" required>
+        <label for="key">Enter decryption key:</label>
+        <input type="text" name="key" required>
+        <button type="submit">Decrypt</button>
+    </form>
+   
+</body>
+</html>
