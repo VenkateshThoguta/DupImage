@@ -5,4 +5,4 @@ libatlas-base-dev==3.10.3
 cryptography==3.4.7
 Pillow==8.2.0
 pycryptodome==3.11.0
-numpy==1.21.2
+
