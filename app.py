@@ -195,5 +195,5 @@ def download(filename):
     return send_from_directory(app.config['ENCRYPTED_FOLDER'], filename)
 
 
-if __name__ == '__main__':
-    app.run(debug=False,host='0.0.0.0')
+# if __name__ == '__main__':
+#     app.run(debug=False,host='0.0.0.0')
